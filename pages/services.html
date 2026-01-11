@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz - n8n Türkiye</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/chat.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">n8n<span>Turkey</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/pages/services.html" class="active">Hizmetler</a></li>
+                    <li><a href="/pages/about.html">Hakkımızda</a></li>
+                    <li><a href="/pages/contact.html">İletişim</a></li>
+                </ul>
+            </nav>
+            <a href="/pages/contact.html" class="btn btn-primary">Teklif Al</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 120px; min-height: 80vh;">
+            <h1>Hizmetlerimiz</h1>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">İşinizi büyütmek için sadece danışmanlık değil,
+                çalışan otomasyon akışları ve AI destekli karar sistemleri sunuyoruz.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Service 1 -->
+                <div
+                    style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                    <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Akıllı Otomasyon Akışları</h2>
+                    <ul style="color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                        <li>n8n ile tetikleyici bazlı süreç yönetimi</li>
+                        <li>En yeni nesil AI destekli karar mekanizmaları</li>
+                        <li>Webhook, API ve form entegrasyonu</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                    <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Edge-Case Çözümleri</h2>
+                    <ul style="color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                        <li>Proxy zinciri ve zamanlama optimizasyonu</li>
+                        <li>Frida attach/spawn hatası yönetimi</li>
+                        <li>Hata log analizi ve güvenli yapılandırma</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    style="background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                    <h2 style="color: var(--primary-color); margin-bottom: 1rem;">AI Destekli Asistan Entegrasyonu</h2>
+                    <ul style="color: var(--text-muted); list-style: disc; padding-left: 1.5rem;">
+                        <li>WordPress chatbot entegrasyonu</li>
+                        <li>n8n üzerinden veri odaklı yanıt üretimi</li>
+                        <li>Kullanıcıya özel içerik ve işlem tetikleme</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 n8n Turkey. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <div id="chat-widget-container"></div>
+    <script type="module" src="/src/scripts/main.js"></script>
+    <script type="module" src="/src/scripts/chat.js"></script>
+</body>
+
+</html>

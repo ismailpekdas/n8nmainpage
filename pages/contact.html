@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - n8n Türkiye</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/chat.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">n8n<span>Turkey</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/pages/services.html">Hizmetler</a></li>
+                    <li><a href="/pages/about.html">Hakkımızda</a></li>
+                    <li><a href="/pages/contact.html" class="active">İletişim</a></li>
+                </ul>
+            </nav>
+            <a href="/pages/contact.html" class="btn btn-primary">Teklif Al</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 120px; min-height: 80vh;">
+            <h1>İletişime Geçin</h1>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">AI destekli sistemleriniz için teknik destek, demo
+                talebi veya özel entegrasyon çözümleri için bize ulaşın.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <div
+                    style="max-width: 600px; background: var(--bg-card); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                    <form>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem;">Adınız Soyadınız</label>
+                            <input type="text"
+                                style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: #0f1014; color: white;"
+                                required>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem;">E-posta Adresiniz</label>
+                            <input type="email"
+                                style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: #0f1014; color: white;"
+                                required>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem;">Mesajınız</label>
+                            <textarea rows="5"
+                                style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: #0f1014; color: white;"
+                                required></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="width: 100%;">Gönder</button>
+                    </form>
+                </div>
+
+                <div style="display: flex; flex-direction: column; justify-content: center; color: var(--text-muted);">
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--text-main); margin-bottom: 0.5rem;">Telefon</h3>
+                        <p style="font-size: 1.25rem;">+90 539 820 9663</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--text-main); margin-bottom: 0.5rem;">E-Posta</h3>
+                        <p style="font-size: 1.25rem;">ismail.pekdas@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 n8n Turkey. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <div id="chat-widget-container"></div>
+    <script type="module" src="/src/scripts/main.js"></script>
+    <script type="module" src="/src/scripts/chat.js"></script>
+</body>
+
+</html>
